@@ -23,11 +23,11 @@ steps:
 - task: Docker@2
   inputs:
     command: 'login'
-    containerRegistry: 'sudhaacrrepo'
+    containerRegistry: 'Connect to demo container registry'
    
 - task: Docker@2
   inputs:
-    containerRegistry: 'sudhaacrrepo'
+    containerRegistry: 'Connect to demo container registry'
     repository: 'sudhaacrrepo.azurecr.io'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
