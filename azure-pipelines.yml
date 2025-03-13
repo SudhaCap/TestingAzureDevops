@@ -24,4 +24,4 @@ steps:
   displayName: Login to ACR
   inputs:
     command: login
-    containerRegistry: <YourServiceConnectionName>
+    containerRegistry: sudhaacrrepo
