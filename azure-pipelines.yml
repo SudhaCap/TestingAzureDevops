@@ -20,13 +20,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean package'
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: '<Service_Connection_Name>'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az acr login --name <ACR_Name>
 - task: Docker@2
   inputs:
     containerRegistry: 'sudhaacrrepo'
