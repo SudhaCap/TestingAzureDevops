@@ -22,7 +22,7 @@ steps:
     goals: 'clean package'
 - task: Docker@2
   inputs:
-    containerRegistry: 'azure-container-registry'
+    containerRegistry: 'sudhaacrrepo'
     repository: 'sudhaacrrepo.azurecr.io'
     command: 'login'
    
